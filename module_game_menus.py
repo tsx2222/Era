@@ -937,6 +937,16 @@ game_menus = [
          (jump_to_menu,"mnu_start_character_1"),
         ]
        ),
+#############################TEST ONLY#################################
+      ("start_directly", [], "I want to go in NOW!",
+        [
+         (troop_set_type, "trp_player",0),
+         (assign,"$character_gender", tf_male),
+         (troop_raise_attribute, "trp_player", ca_intelligence, -4),
+         (change_screen_map,0),
+        ]
+      ),
+#############################TEST ONLY#################################
       ("start_female",[],"Female",
        [
          (troop_set_type, "trp_player", 1),
