@@ -114,6 +114,8 @@ str_27           = bignum | 0x0000001b
 str_28           = bignum | 0x0000001c
 str_29           = bignum | 0x0000001d
 str_30           = bignum | 0x0000001e
+str_33           = bignum | 0x00000021
+
 
 agi_3            = bignum | 0x00000300
 agi_4            = bignum | 0x00000400
@@ -143,6 +145,8 @@ agi_27           = bignum | 0x00001b00
 agi_28           = bignum | 0x00001c00
 agi_29           = bignum | 0x00001d00
 agi_30           = bignum | 0x00001e00
+agi_33           = bignum | 0x00002100
+
 
 int_3            = bignum | 0x00030000
 int_4            = bignum | 0x00040000

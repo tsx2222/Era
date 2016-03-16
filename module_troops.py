@@ -404,7 +404,7 @@ troops = [
    [itm_awlpike,itm_pike,itm_great_sword,itm_morningstar,itm_sword_medieval_b,itm_tab_shield_heater_c,itm_tab_shield_heater_d,itm_coat_of_plates,itm_plate_armor,itm_plate_boots,itm_guard_helmet,itm_helmet_with_neckguard,itm_bascinet,itm_guard_helmet,itm_leather_gloves],
    def_attrib|level(25),wp(130),knows_common|knows_shield_3|knows_ironflesh_3|knows_power_strike_3,swadian_face_young_1, swadian_face_old_2],
 
-# JHG Army
+# JHG troop
   ["jhg_freeman","Jhg Freeman","Jhg Freemen",tf_guarantee_boots|tf_guarantee_armor,0,0,fac_kingdom_2,
    [itm_scythe,itm_hatchet,itm_cudgel,itm_axe,itm_stones,itm_tab_shield_kite_a, itm_tab_shield_kite_a,
     itm_linen_tunic, itm_rawhide_coat,itm_nomad_boots],
@@ -457,6 +457,8 @@ troops = [
    def_attrib|level(36),wp(390),knows_athletics_3|knows_shield_2|knows_ironflesh_3,vaegir_face_middle_1, vaegir_face_older_2],
 
 
+
+  #troop tree of Yigeer han guo(HG)
   ["hg_brave","Hg Brave","Hg Brave",tf_guarantee_boots|tf_guarantee_armor,0,0,fac_kingdom_3,
    [itm_arrows,itm_club,itm_spear,itm_hunting_bow,
     itm_steppe_cap,itm_nomad_cap_b,itm_leather_vest,itm_steppe_armor,itm_nomad_boots,itm_khergit_leather_boots],
@@ -497,31 +499,57 @@ troops = [
   ["hg_chong","Hg Chong","Hg Chong", tf_guarantee_shield|tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_helmet,0,0,fac_kingdom_3,
    [itm_sword_khergit_4,itm_tab_shield_small_round_b,itm_tab_shield_small_round_a,itm_lamellar_vest_khergit,itm_lamellar_armor,itm_khergit_leather_boots,itm_iron_greaves,itm_khergit_guard_helmet,itm_khergit_cavalry_helmet,itm_leather_warrior_cap],
    str_27 | agi_26|level(33),wp(340),knows_athletics_5|knows_shield_3|knows_ironflesh_7|knows_power_strike_7|knows_riding_7,khergit_face_middle_1, khergit_face_older_2],
-  ["Yg_mumin","Yg Mumin","Yg Mumin", tf_guarantee_shield|tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_helmet,0,0,fac_kingdom_3,
+  ["yg_mumin","Yg Mumin","Yg Mumin", tf_guarantee_shield|tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_helmet,0,0,fac_kingdom_3,
    [itm_sword_khergit_4,itm_tab_shield_small_round_b,itm_tab_shield_small_round_a,itm_lamellar_vest_khergit,itm_lamellar_armor,itm_khergit_leather_boots,itm_iron_greaves,itm_khergit_guard_helmet,itm_khergit_cavalry_helmet,itm_leather_warrior_cap],
    str_5 | agi_5|level(1),wp(60),knows_ironflesh_1|knows_riding_2,khergit_face_middle_1, khergit_face_older_2],
-  ["Yg_qishe","Yg Qishe","Yg Qishe",tf_mounted|tf_guarantee_all_wo_ranged,0,0,fac_kingdom_3,
+  ["yg_qishe","Yg Qishe","Yg Qishe",tf_mounted|tf_guarantee_all_wo_ranged,0,0,fac_kingdom_3,
    [itm_sword_khergit_4,itm_spiked_mace,itm_one_handed_war_axe_b,itm_hafted_blade_a,itm_hafted_blade_b,itm_heavy_lance,itm_lance,
     itm_khergit_guard_helmet,itm_khergit_cavalry_helmet,itm_khergit_war_helmet,itm_lamellar_vest_khergit,itm_lamellar_armor,itm_khergit_leather_boots,itm_splinted_leather_greaves,itm_leather_gloves,itm_scale_gauntlets,itm_tab_shield_small_round_b,itm_tab_shield_small_round_c,itm_courser,itm_warhorse_steppe,itm_warhorse_steppe,itm_warhorse_steppe],
    str_10 | agi_12|level(10),wp(180),knows_riding_3|knows_power_strike_2|knows_power_draw_3|knows_ironflesh_2|knows_horse_archery_3,khergit_face_middle_1, khergit_face_older_2],
   ["yg_zisheng","Yg Zisheng","Yg Zisheng",tf_mounted|tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_gloves|tf_guarantee_horse|tf_guarantee_ranged,0,0,fac_kingdom_3,
    [itm_sword_khergit_2,itm_leather_jerkin,itm_leather_boots,itm_courser,itm_leather_gloves,itm_short_bow,itm_arrows],
    str_15 | agi_18 |level(18),wp(250),knows_ironflesh_4|knows_power_strike_3|knows_power_draw_5|knows_riding_5|knows_horse_archery_4|knows_shield_2,khergit_face_young_1, khergit_face_older_2],
-  ["yg_shediao","Yg Shediao","Hg Daosheng",tf_guarantee_ranged|tf_guarantee_boots|tf_guarantee_armor,0,0,fac_deserters,
+  ["yg_shediao","Yg Shediao","Yg Shediao",tf_guarantee_ranged|tf_guarantee_boots|tf_guarantee_armor,0,0,fac_deserters,
    [itm_arrows,itm_spiked_mace,itm_axe,itm_sword_khergit_1,itm_short_bow,itm_short_bow,itm_hunting_bow,itm_javelin,itm_javelin,itm_steppe_cap,itm_nomad_cap_b,itm_khergit_armor,itm_steppe_armor,itm_tribal_warrior_outfit,itm_nomad_boots],
    str_24 | agi_27 |level(25),wp(280)+wp_archery(320-280),knows_ironflesh_6|knows_power_strike_5|knows_athletics_4|knows_power_draw_7|knows_horse_archery_6|knows_riding_6,khergit_face_young_1, khergit_face_older_2],
-  ["hg_daoke","Hg Daoke","Hg Daoke", tf_guarantee_shield|tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_helmet,0,0,fac_kingdom_3,
+  ["yg_qiangqi","Yg Qiangqi","Yg Qiangqi", tf_guarantee_shield|tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_helmet,0,0,fac_kingdom_3,
    [itm_sword_khergit_3,itm_tab_shield_small_round_b,itm_tab_shield_small_round_a,itm_lamellar_vest_khergit,itm_lamellar_armor,itm_khergit_leather_boots,itm_iron_greaves,itm_khergit_guard_helmet,itm_khergit_cavalry_helmet,itm_leather_warrior_cap],
-   str_27 | agi_30|level(35),wp(380),knows_athletics_9|knows_power_strike_9|knows_ironflesh_7,khergit_face_middle_1, khergit_face_older_2],
-  ["hg_zhongqi","Hg Zhongqi","Hg Zhongqi", tf_guarantee_shield|tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_helmet,0,0,fac_kingdom_3,
+   str_21 | agi_17|level(18),wp(260),knows_athletics_4|knows_power_strike_5|knows_ironflesh_5|knows_riding_5|knows_shield_2,khergit_face_middle_1, khergit_face_older_2],
+  ["yg_zhongjia","Yg Zhongjia","Yg Zhongjia", tf_guarantee_shield|tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_helmet,0,0,fac_kingdom_3,
+   [itm_sword_khergit_3,itm_tab_shield_small_round_b,itm_tab_shield_small_round_a,itm_lamellar_vest_khergit,itm_lamellar_armor,itm_khergit_leather_boots,itm_iron_greaves,itm_khergit_guard_helmet,itm_khergit_cavalry_helmet,itm_leather_warrior_cap],
+   str_27 | agi_26|level(30),wp(330),knows_athletics_4|knows_power_strike_8|knows_ironflesh_8|knows_riding_7|knows_shield_4,khergit_face_middle_1, khergit_face_older_2],
+  ["tg_mumin","Tg Mumin","Tg Mumin", tf_guarantee_shield|tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_helmet,0,0,fac_kingdom_3,
    [itm_sword_khergit_4,itm_tab_shield_small_round_b,itm_tab_shield_small_round_a,itm_lamellar_vest_khergit,itm_lamellar_armor,itm_khergit_leather_boots,itm_iron_greaves,itm_khergit_guard_helmet,itm_khergit_cavalry_helmet,itm_leather_warrior_cap],
-   str_21 | agi_18|level(22),wp(250),knows_athletics_4|knows_shield_2|knows_ironflesh_6|knows_power_strike_6|knows_riding_6,khergit_face_middle_1, khergit_face_older_2],
-  ["hg_chong","Hg Chong","Hg Chong", tf_guarantee_shield|tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_helmet,0,0,fac_kingdom_3,
+   str_3 | agi_3|level(1),wp(50),knows_ironflesh_2|knows_power_strike_1, khergit_face_older_2],
+  ["tg_wushi","Tg Wushi","Tg Wushi", tf_guarantee_shield|tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_helmet,0,0,fac_kingdom_3,
    [itm_sword_khergit_4,itm_tab_shield_small_round_b,itm_tab_shield_small_round_a,itm_lamellar_vest_khergit,itm_lamellar_armor,itm_khergit_leather_boots,itm_iron_greaves,itm_khergit_guard_helmet,itm_khergit_cavalry_helmet,itm_leather_warrior_cap],
-   str_27 | agi_26|level(33),wp(340),knows_athletics_5|knows_shield_3|knows_ironflesh_7|knows_power_strike_7|knows_riding_7,khergit_face_middle_1, khergit_face_older_2],
-  ["khergit_castle_guard","Castle Guard","Castle Guards", tf_guarantee_shield|tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_helmet,0,0,fac_kingdom_3,
+   str_11 | agi_10|level(10),wp(190),knows_athletics_3|knows_shield_1|knows_ironflesh_4|knows_power_strike_3,khergit_face_middle_1, khergit_face_older_2],
+  ["tg_xuelang","Tg Xuelang","Tg Xuelang", tf_guarantee_shield|tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_helmet,0,0,fac_kingdom_3,
    [itm_sword_khergit_4,itm_tab_shield_small_round_b,itm_tab_shield_small_round_a,itm_lamellar_vest_khergit,itm_lamellar_armor,itm_khergit_leather_boots,itm_iron_greaves,itm_khergit_guard_helmet,itm_khergit_cavalry_helmet,itm_leather_warrior_cap],
-   def_attrib|level(24),wp(130),knows_athletics_5|knows_shield_2|knows_ironflesh_5,khergit_face_middle_1, khergit_face_older_2],
+   str_18 | agi_15|level(20),wp(280)+wp_throwing(300-280),knows_athletics_6|knows_shield_4|knows_ironflesh_6|knows_power_strike_5|knows_power_throw_5,khergit_face_middle_1, khergit_face_older_2],
+  ["tg_youqi","Tg Youqi","Tg Youqi", tf_guarantee_shield|tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_helmet,0,0,fac_kingdom_3,
+   [itm_sword_khergit_4,itm_tab_shield_small_round_b,itm_tab_shield_small_round_a,itm_lamellar_vest_khergit,itm_lamellar_armor,itm_khergit_leather_boots,itm_iron_greaves,itm_khergit_guard_helmet,itm_khergit_cavalry_helmet,itm_leather_warrior_cap],
+   str_16 | agi_21|level(20),wp(260)+wp_throwing(320-260),knows_athletics_4|knows_shield_1|knows_ironflesh_5|knows_power_strike_5|knows_power_throw_7|knows_horse_archery_5|knows_riding_6,khergit_face_middle_1, khergit_face_older_2],
+  ["hg_futu","Hg Futu","Hg Futu",tf_guarantee_ranged|tf_guarantee_boots|tf_guarantee_armor,0,0,fac_deserters,
+   [itm_arrows,itm_spiked_mace,itm_axe,itm_sword_khergit_1,itm_short_bow,itm_short_bow,itm_hunting_bow,itm_javelin,itm_javelin,itm_steppe_cap,itm_nomad_cap_b,itm_khergit_armor,itm_steppe_armor,itm_tribal_warrior_outfit,itm_nomad_boots],
+   str_33 | agi_30 |level(55),wp(460),knows_ironflesh_9|knows_power_strike_9|knows_athletics_7|knows_shield_6|knows_riding_8,khergit_face_young_1, khergit_face_older_2],
+  ["hg_guizu","Hg Guizu","Hg Guizu", tf_guarantee_shield|tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_helmet,0,0,fac_kingdom_3,
+   [itm_sword_khergit_3,itm_tab_shield_small_round_b,itm_tab_shield_small_round_a,itm_lamellar_vest_khergit,itm_lamellar_armor,itm_khergit_leather_boots,itm_iron_greaves,itm_khergit_guard_helmet,itm_khergit_cavalry_helmet,itm_leather_warrior_cap],
+   str_20 | agi_18|level(18),wp(230),knows_athletics_4|knows_power_strike_5|knows_ironflesh_6|knows_riding_6|knows_shield_3,khergit_face_middle_1, khergit_face_older_2],
+  ["hg_knight","Hg Knight","Hg Knight", tf_guarantee_shield|tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_helmet,0,0,fac_kingdom_3,
+   [itm_sword_khergit_4,itm_tab_shield_small_round_b,itm_tab_shield_small_round_a,itm_lamellar_vest_khergit,itm_lamellar_armor,itm_khergit_leather_boots,itm_iron_greaves,itm_khergit_guard_helmet,itm_khergit_cavalry_helmet,itm_leather_warrior_cap],
+   str_24 | agi_24|level(25),wp(270)+wp_archery(310-270),knows_ironflesh_7|knows_power_strike_5|knows_power_draw_6|knows_athletics_5|knows_riding_6|knows_horse_archery_6, khergit_face_older_2],
+  ["hg_guaizi","Hg Guaizi","Hg Guaizi", tf_guarantee_shield|tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_helmet,0,0,fac_kingdom_3,
+   [itm_sword_khergit_4,itm_tab_shield_small_round_b,itm_tab_shield_small_round_a,itm_lamellar_vest_khergit,itm_lamellar_armor,itm_khergit_leather_boots,itm_iron_greaves,itm_khergit_guard_helmet,itm_khergit_cavalry_helmet,itm_leather_warrior_cap],
+   str_28 | agi_26|level(45),wp(360),knows_athletics_5|knows_shield_3|knows_ironflesh_6|knows_power_strike_4|knows_riding_6|knows_power_throw_5|knows_horse_archery_5,khergit_face_middle_1, khergit_face_older_2],
+  ["hg_canglang","Hg Canglang","Hg Canglang", tf_guarantee_shield|tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_helmet,0,0,fac_kingdom_3,
+   [itm_sword_khergit_4,itm_tab_shield_small_round_b,itm_tab_shield_small_round_a,itm_lamellar_vest_khergit,itm_lamellar_armor,itm_khergit_leather_boots,itm_iron_greaves,itm_khergit_guard_helmet,itm_khergit_cavalry_helmet,itm_leather_warrior_cap],
+   str_29 | agi_33|level(55),wp(400)+wp_archery(460-400),knows_athletics_7|knows_shield_4|knows_ironflesh_8|knows_power_strike_5|knows_power_draw_8|knows_riding_9|knows_horse_archery_7,khergit_face_middle_1, khergit_face_older_2],
+  ["hg_huwei","Hg Huwei","Hg Huwei", tf_guarantee_shield|tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_helmet,0,0,fac_kingdom_3,
+   [itm_sword_khergit_4,itm_tab_shield_small_round_b,itm_tab_shield_small_round_a,itm_lamellar_vest_khergit,itm_lamellar_armor,itm_khergit_leather_boots,itm_iron_greaves,itm_khergit_guard_helmet,itm_khergit_cavalry_helmet,itm_leather_warrior_cap],
+   str_25 | agi_23|level(45),wp(340),knows_athletics_5|knows_shield_3|knows_ironflesh_7|knows_power_strike_4|knows_riding_5,khergit_face_middle_1, khergit_face_older_2],
+
+
 
 
 
@@ -570,6 +598,9 @@ troops = [
   ["nord_castle_guard","Castle Guard","Castle Guards", tf_guarantee_shield|tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_helmet,0,0,fac_kingdom_4,
    [itm_ashwood_pike,itm_battle_fork,itm_battle_axe,itm_fighting_axe,itm_tab_shield_round_d,itm_tab_shield_round_e,itm_mail_hauberk,itm_heraldic_mail_with_tabard,itm_mail_chausses,itm_iron_greaves,itm_nordic_helmet,itm_nordic_helmet,itm_nordic_helmet,itm_spiked_helmet,itm_leather_gloves],
    def_attrib|level(24),wp(130),knows_athletics_3|knows_shield_2|knows_ironflesh_3,nord_face_middle_1, nord_face_older_2],
+
+
+
 
 
   ["rhodok_tribesman","Rhodok Tribesman","Rhodok Tribesmen",tf_guarantee_boots|tf_guarantee_armor,0,0,fac_kingdom_5,
@@ -2198,10 +2229,22 @@ upgrade2(troops,"jhg_zhongbu","jhg_changji", "jhg_jinwei")
 upgrade(troops, "jhg_changji", "jhg_fangzhen")
 ##############jhg_army_upgrade_tree###########
 
-upgrade(troops,"khergit_tribesman","khergit_skirmisher")
-upgrade(troops,"khergit_skirmisher","khergit_horseman")
-upgrade2(troops,"khergit_horseman","khergit_lancer","khergit_horse_archer")
-upgrade(troops,"khergit_horse_archer","khergit_veteran_horse_archer")
+#HG_troop_upgarde
+upgrade(troops,"hg_brave","hg_changdao")
+upgrade2(troops,"hg_changdao","hg_gongjian","hg_footman")
+upgrade2(troops,"hg_gongjian","hg_xuanfeng","hg_yufeng")
+upgrade2(troops,"hg_footman","hg_wushi","hg_zhongqi")
+upgrade2(troops,"hg_wushi","hg_daosheng","hg_daoke")
+upgrade(troops,"hg_zhongqi","hg_chong")
+upgrade(troops,"yg_mumin","yg_qishe")
+upgrade2(troops,"yg_qishe","yg_zisheng","yg_qiangqi")
+upgrade(troops,"yg_zisheng","yg_shediao")
+upgrade(troops,"yg_qiangqi","yg_zhongjia")
+upgrade(troops,"tg_mumin","tg_wushi")
+upgrade2(troops,"tg_wushi","tg_xuelang","tg_youqi")
+upgrade(troops,"hg_guizu","hg_knight")
+#HG_troop_upgrade
+
 
 upgrade2(troops,"nord_recruit","nord_footman","nord_huntsman")
 upgrade(troops,"nord_footman","nord_trained_footman")
@@ -2235,14 +2278,7 @@ upgrade(troops,"sarranid_horseman","sarranid_mamluke")
 
 upgrade2(troops,"looter","mountain_bandit", "forest_bandit")
 
-#new tree connections
-upgrade(troops,"mountain_bandit","rhodok_tribesman")
-upgrade(troops,"forest_bandit","swadian_recruit")
-upgrade(troops,"steppe_bandit","khergit_tribesman")
-upgrade(troops,"taiga_bandit","vaegir_recruit")
-upgrade(troops,"sea_raider","nord_recruit")
-upgrade(troops,"desert_bandit","sarranid_recruit")
-#new tree connections ended
+
 
 upgrade2(troops,"bandit","brigand","mercenary_swordsman")
 upgrade(troops,"manhunter","slave_driver")

@@ -1808,8 +1808,8 @@ mission_templates = [
                 
      (try_begin), 
        (this_or_next|eq, ":dead_agent_troop_no", "trp_swadian_prison_guard"),
-       (this_or_next|eq, ":dead_agent_troop_no", "trp_vaegir_prison_guard"),
-       (this_or_next|eq, ":dead_agent_troop_no", "trp_khergit_prison_guard"),
+       (this_or_next|eq, ":dead_agent_troop_no", "trp_jhg_freeman"),        #prison guard
+       (this_or_next|eq, ":dead_agent_troop_no", "trp_hg_brave"),
        (this_or_next|eq, ":dead_agent_troop_no", "trp_nord_prison_guard"),
        (this_or_next|eq, ":dead_agent_troop_no", "trp_rhodok_prison_guard"),
        (eq, ":dead_agent_troop_no", "trp_sarranid_prison_guard"),
@@ -3215,8 +3215,8 @@ mission_templates = [
                 
         (try_begin), 
           (this_or_next|eq, ":dead_agent_troop_no", "trp_swadian_prison_guard"),
-          (this_or_next|eq, ":dead_agent_troop_no", "trp_vaegir_prison_guard"),
-          (this_or_next|eq, ":dead_agent_troop_no", "trp_khergit_prison_guard"),
+          (this_or_next|eq, ":dead_agent_troop_no", "trp_jhg_freeman"),         #prison guard
+          (this_or_next|eq, ":dead_agent_troop_no", "trp_hg_brave"),
           (this_or_next|eq, ":dead_agent_troop_no", "trp_nord_prison_guard"),
           (this_or_next|eq, ":dead_agent_troop_no", "trp_rhodok_prison_guard"),
           (eq, ":dead_agent_troop_no", "trp_sarranid_prison_guard"),
@@ -7517,9 +7517,9 @@ mission_templates = [
                    (val_add, "$tutorial_5_state", 1),
                    (modify_visitors_at_site,"scn_tutorial_5"),
                    (reset_visitors),
-                   (set_visitor,5,"trp_vaegir_archer"),
-                   (set_visitor,6,"trp_vaegir_archer"),
-                   (set_visitor,7,"trp_vaegir_archer"),
+                   (set_visitor,5,"trp_jhg_freeman"),               #unknown
+                   (set_visitor,6,"trp_jhg_freeman"),
+                   (set_visitor,7,"trp_jhg_freeman"),
                    (entry_point_get_position, pos1, 11),
                    (scene_prop_get_instance, ":flag_object", "spr_tutorial_flag_yellow", 0),
                    (prop_instance_animate_to_position, ":flag_object", pos1, 1),
